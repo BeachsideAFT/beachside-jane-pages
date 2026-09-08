@@ -253,7 +253,7 @@
       <div class="find-n">10</div>
       <div class="find-b">
         <h3>A lot of clients are not receiving what you think they are</h3>
-        <p>139 of 713 clients are not subscribed to the 3-day email reminder. 630 of 708 client profiles have booking, cancellation and change notifications switched off. These are per-profile settings that drifted, not a policy anyone chose.</p>
+        <p>140 of 730 clients are not subscribed to the 3-day email reminder, and 418 of 730 are on the 2-day SMS. Only about 87 client profiles have booking, cancellation and change notifications switched on, against roughly 630 switched off. These are per-profile settings that drifted, not a policy anyone chose.</p>
       </div>
     </div>
 
@@ -495,10 +495,10 @@
       <span class="swap"><b>So:</b> finding the gap means comparing two lists — new starts against plans written. See below.</span>
     </div>
 
-    <div class="entry cant">
-      <h3>Record why an appointment was cancelled <span class="tag tag-e">From Jane's guides</span></h3>
-      <p>Jane's History &amp; Status section logs who cancelled or moved an appointment and when. It does not capture a reason.</p>
-      <span class="swap"><b>So:</b> "the client cancelled" and "we cancelled because the therapist was off" look identical in the data unless you make them different on purpose.</span>
+    <div class="entry can">
+      <h3>Record why an appointment was cancelled <span class="tag tag-v">Seen in your account</span></h3>
+      <p><b>This corrects the 31 August draft, which said Jane could not do this.</b> Every Cancel/Delete route — the fee buttons and "Cancel Appointment - No Charge" alike — opens a <em>Reason for Cancellation</em> screen. Dr. O&#x27;Reilly rewrote the options on 8 September; they now read: Provider sick &middot; Provider vacation &middot; Provider out personal &middot; 1 of 2 free cancellations per year &middot; 2 of 2 free cancellations per year &middot; Holiday - Clinic Closed &middot; Treatment terminated/graduated. They are edited at <span class="path">Settings &rarr; Language &rarr; Admin Site: Cancellation Reasons</span>. The reason is stored and appears in <span class="path">Reports &rarr; Appointments</span> inside the <b>Booking Info</b> column, and it exports.</p>
+      <span class="swap"><b>So:</b> clinic-caused cancellations are already separable from client-caused ones, with no convention to invent. Two traps worth knowing: the <b>first option is pre-selected</b> when the screen opens — today "Provider sick" — so a distracted click files a client's cancellation as therapist illness; and the freebie lines also appear on the fee routes, where they only label the cancellation and do <b>not</b> waive the charge. What Jane still has no option for is a <b>client-side</b> reason, and there is no per-client cancellation counter.</span>
     </div>
 
     <div class="entry cant">
@@ -576,11 +576,11 @@
     <ul class="plain">
       <li><strong>Seen</strong> — appointment state <em>Arrived</em> (and <em>Checked In</em> for anyone still mid-day).</li>
       <li><strong>The client didn't come</strong> — <em>No Show</em>, plus cancellations inside the 24-hour late window.</li>
-      <li><strong>We couldn't see them</strong> — cancellations caused by the clinic: illness, leave, an emergency. This is the bucket Jane cannot identify on its own.</li>
+      <li><strong>We couldn't see them</strong> — cancellations caused by the clinic: illness, leave, an emergency. Jane <b>can</b> identify this bucket: "Provider sick", "Provider vacation", "Provider out personal" and "Holiday - Clinic Closed" are four of the seven cancellation reasons, and they come through in the Booking Info column of the exported Appointments report.</li>
     </ul>
 
     <h3>Making the third bucket countable</h3>
-    <p>Since Jane records no cancellation reason and no leave type, the practice has to supply the difference. Two workable conventions, and I'd take the first:</p>
+    <p>The cancellation reason already separates the three buckets, so nothing needs inventing there. What Jane carries no <em>leave type</em> for is the shift itself — an absent clinician's empty day looks the same whether they were sick or on holiday. That is the gap these conventions close, and I'd take the first:</p>
     <ul class="plain">
       <li><strong>A standard block label.</strong> When a clinician is out, place a block across the day named exactly <em>Sick</em> or <em>Vacation</em> — the schedule already carries free-text blocks like Lunch, Break, Telehealth and Unavailable, so this is a habit rather than a build. Breaks are a filterable state in the Appointments report, so those days can be pulled out and set aside.</li>
       <li><strong>Remove the shift through Manage Shifts.</strong> Cleaner in one way — scheduled hours drop, so <span class="path">Reports → Hours Scheduled / Booked</span> shows the honest capacity for the period. But it leaves no trace of <em>why</em>, and it does not distinguish sick from planned leave.</li>

@@ -259,7 +259,7 @@
     <div class="meta">
       <span>Prepared 31 August 2026 · updated 4 September 2026</span>
       <span>Read-only assessment — nothing in Jane was changed</span>
-      <span>Draft for Kerry</span>
+      <span>Draft for Dr. O&#x27;Reilly</span>
     </div>
   </div>
 
@@ -289,7 +289,7 @@
           <tr>
             <td class="who">Online booking</td>
             <td><span class="pill ready">Off — deliberately</span></td>
-            <td>Set to "Online booking disabled" account-wide. 708 client profiles are on the default, 0 individually allowed. This hides availability from everyone who isn't approved, which is how approved-only booking is built. Keep it.</td>
+            <td>Set to "Online booking disabled" account-wide. 730 client profiles are on the default, 0 individually allowed. This hides availability from everyone who isn't approved, which is how approved-only booking is built. Keep it.</td>
           </tr>
           <tr>
             <td class="who">Client wait list requests</td>
@@ -309,7 +309,7 @@
           <tr>
             <td class="who">Appointment reminders</td>
             <td><span class="pill on">On</span></td>
-            <td>Email 3 days before (574 of 713 clients subscribed) and SMS 2 days before (409 of 713). 139 clients are getting no email reminder.</td>
+            <td>Email 3 days before (590 of 730 clients subscribed) and SMS 2 days before (418 of 730). 140 clients are getting no email reminder.</td>
           </tr>
           <tr>
             <td class="who">Client self-cancel and self-reschedule</td>
@@ -319,7 +319,7 @@
           <tr>
             <td class="who">Booking / cancel / change notifications</td>
             <td><span class="pill off">Mostly off</span></td>
-            <td>78 client profiles enabled, 630 disabled.</td>
+            <td>About 87 client profiles enabled, roughly 630 disabled.</td>
           </tr>
           <tr>
             <td class="who">Intake form reminder email</td>
@@ -434,7 +434,7 @@
         <li>Know what Jane is already doing before you design around it: every client with an unfinished form gets one automatic reminder 24 hours before their appointment. It has always been on. That means part of the morning reminder-email routine has been duplicating a message the client already received — but only <em>one</em> reminder is ever sent, and only at 24 hours, which is exactly why the 3pm call round still earns its place.</li>
         <li>Make <span class="path">Reports → Client Forms</span> the front desk's morning screen. Filter <em>All Outstanding</em> and set Appointment Date to tomorrow: that is the 3pm call list, already sorted by appointment time.</li>
         <li>Log each call in that report's side panel — <em>Send reminder → Phone call (manual)</em>, then the outcome in <em>Notes</em>. This is where the roster's notes columns go.</li>
-        <li>In <span class="path">Settings → Reminders &amp; Notifications</span>, get the 139 clients who aren't subscribed to the 3-day email onto it.</li>
+        <li>In <span class="path">Settings → Reminders &amp; Notifications</span>, get the 140 clients who aren't subscribed to the 3-day email onto it.</li>
       </ol>
       <div class="retire"><b>Retire when this is done:</b> the Hushmail "Urgent!" Reply-All routine, the roster's document-tracking columns and X marks, and the Dropbox patient-documents filing step.</div>
     </div>
@@ -468,7 +468,7 @@
         <li>Make <span class="path">Reports → Accounts Receivable</span> the weekly balance review, filtered to client accounts.</li>
         <li>Use <span class="path">Billing → Purchases → Filter</span> with the Status and Invoice Age filters, <em>Select All</em>, then <em>Statement</em>, for a batch of statements.</li>
         <li>Export <span class="path">Reports → Unscheduled Clients (Last Visit)</span> alongside it, so every balance is sorted into "still attending" or "gone" before anyone writes to them.</li>
-        <li>Agree one convention for recording clinician absence — a block labelled exactly <em>Sick</em> or <em>Vacation</em>, or a shift removed through Manage Shifts — and write it down. Jane records no cancellation reason and no leave type, so without this the booked-versus-seen report cannot tell "the client didn't come" from "we were closed," and it will read as a clinician problem either way. Then add booked / seen / no-showed / clinic-cancelled per clinician to the Monday review off <span class="path">Reports → Appointments</span>, filtered on appointment state.</li>
+        <li>Agree one convention for recording clinician absence — a block labelled exactly <em>Sick</em> or <em>Vacation</em>, or a shift removed through Manage Shifts — and write it down. Jane <b>does</b> record a cancellation reason — "Provider sick" and "Holiday - Clinic Closed" are two of the seven options, and the reason exports in the <b>Booking Info</b> column of <span class="path">Reports → Appointments</span>, so clinic-caused cancellations are already separable. What Jane carries no <em>leave type</em> for is the shift itself, which is what this convention is for. Then add booked / seen / no-showed / clinic-cancelled per clinician to the Monday review off <span class="path">Reports → Appointments</span>, filtered on appointment state.</li>
         <li>Have whoever owns Claim.MD day to day (Lucianna today) start applying remittances in Jane's ERA tool as they arrive instead of leaving them queued. This is the step that makes Accounts Receivable trustworthy without anyone re-keying anything — it's a Jane feature already paid for and currently sitting idle.</li>
       </ol>
       <div class="retire"><b>Retire when this is done:</b> the entire twenty-step patient aging report — the Save-as dance, the blank-provider row deletion, the duplicate-value conditional formatting, the formula copy-down, the second monitor.</div>
