@@ -1187,19 +1187,18 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
   </ul>
   <div class="note warn"><b>There is no Medicaid or Medi-Cal fee, and that is deliberate.</b> Those clients are never charged. If one does not call and does not show, that goes to Dr. O&#x27;Reilly or Lisa — it is the termination route, not a billing one.</div>
 
-  <h4>We do not offer cancellation. We offer rescheduling.</h4>
-  <p>That is the policy, and it changes what you do the moment the message arrives. There is no "cancel" outcome a client is entitled to — there is a reschedule, and a fee only when a reschedule turns out to be impossible.</p>
-  <p>The cancel control sits on the appointment screen <b>below Booking Information</b>. Click <kbd>Cancel/Delete</kbd> and a dropdown opens — but that is the last step, not the first.</p>
+  <h4>The rule, and which button follows from it</h4>
+  <p>Two routes, and they are not interchangeable. <b>Cancel/Delete</b> is how a <b>therapist</b> records that <i>they</i> cancelled — no charge to the client, just the reason. The <b>No Show</b> button is where the money is, for a client who did not come or cancelled too late. The cancel control sits on the appointment screen <b>below Booking Information</b>.</p>
   <ol>
-    <li><b>Notice in advance? It is a reschedule.</b> Offer times. Nothing is charged and nothing is cancelled. Item 21 has the two-text discipline for doing this by message.</li>
-    <li><b>Last minute — under 24 hours — try to accommodate a reschedule first.</b> This is a real step, not a formality. Look at your week and offer what you actually have.</li>
-    <li><b>Only if you genuinely cannot accommodate one does it become a late cancellation</b>, and only then is anything charged. The fee is the fallback when rescheduling fails, not the standard response to short notice.</li>
-    <li><b>Rescheduled it after all?</b> Record it with <kbd>Cancelation- Rescheduled</kbd> ($0.00). The event stays on the record and the client is not charged. </li>
-    <li><b>Charging?</b> Match their payer — the same single list above. There is no separate cancellation-side fee set.</li>
-    <li><b>Any fee button opens a second screen asking for the reason.</b> Choose it there.</li>
+    <li><b>More than 24 hours' notice?</b> The client books a <b>make-up session within two weeks</b>. If they do, nothing is charged.</li>
+    <li><b>No make-up booked inside those two weeks?</b> The fee is charged <b>on the original appointment</b> — the one they missed, not the replacement.</li>
+    <li><b>Under 24 hours' notice?</b> The cancellation fee is charged.</li>
+    <li><b>A no show costs the same as a cancellation.</b> Not coming and not calling is billed the same way.</li>
+    <li><b>Medicaid or Medi-Cal? Never charged.</b> We cannot bill them for this. A client who does not call and does not show is taken to have ended treatment — that goes to Dr. O&#x27;Reilly or Lisa, not to a fee button.</li>
+    <li><b>Charging?</b> Match their payer from the single list above. Then the reason screen opens — choose it there, and change the pre-selected first option if it is not what happened.</li>
   </ol>
   <div class="note">
-    <b>Why the order matters.</b> A therapist who reaches for the fee button on a last-minute message has skipped the part the client is actually owed. Offer the time first. If you have nothing to offer, the fee is fair and the record will show you tried.
+    <b>Check the insurer before you touch a button.</b> We can never charge more than that client&#x27;s insurer reimburses, including the copay. That is the whole reason there is a separate fee per payer — pick the wrong one and we have overcharged.
   </div>
 
   <h4>The two freebies</h4>
@@ -1691,7 +1690,7 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
   });
 
   /* ---------- print ---------- */
-  /* Printing is blocked inside the Claude artifact viewer (a sandboxed frame
+  /* Printing is blocked inside sandboxed viewers (a framed page silently ignores window.print()
      silently ignores window.print()). Detect that and say so, instead of
      appearing to do nothing. */
   function inViewer(){ try { return window.self !== window.top; } catch(e){ return true; } }
@@ -1716,13 +1715,13 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
 
   document.getElementById("printBtn").addEventListener("click", function(){
     stampPrintHead();
-    tryPrint(true, "Printing does not work inside the Claude viewer. Everything is now expanded so you can read it all \u2014 to print, use the PDF in your Beachside Jane Pages folder.");
+    tryPrint(true, "Printing is blocked in this view. Everything is now expanded so you can read it all \u2014 to print, open the page in its own browser tab and use your browser\u2019s Print command.");
   });
 
   // Save a dated copy: print dialog → "Save as PDF"
   document.getElementById("saveBtn").addEventListener("click", function(){
     stampPrintHead();
-    tryPrint(false, "Printing does not work inside the Claude viewer. Everything is now expanded so you can read it all \u2014 to print, use the PDF in your Beachside Jane Pages folder.");
+    tryPrint(false, "Printing is blocked in this view. Everything is now expanded so you can read it all \u2014 to print, open the page in its own browser tab and use your browser\u2019s Print command.");
   });
 
   document.getElementById("resetBtn").addEventListener("click", function(){

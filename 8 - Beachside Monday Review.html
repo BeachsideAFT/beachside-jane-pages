@@ -610,7 +610,7 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
   document.getElementById("printBtn").addEventListener("click", function(){
     var framed; try { framed = (window.self !== window.top); } catch(e){ framed = true; }
     if (framed){
-      saveMsg.textContent = "Printing does not work inside the Claude viewer \u2014 use the PDF in your Beachside Jane Pages folder.";
+      saveMsg.textContent = "Printing is blocked in this view \u2014 open the page in its own browser tab and use your browser\u2019s Print command.";
       return;
     }
     window.print();

@@ -1140,7 +1140,7 @@ Beachside Adult &amp; Family Therapy
   });
 
 
-  /* Printing is blocked inside the Claude artifact viewer (a sandboxed frame
+  /* Printing is blocked inside sandboxed viewers (a framed page silently ignores window.print()
      silently ignores window.print()). Detect that and say so, instead of
      appearing to do nothing. */
   function inViewer(){ try { return window.self !== window.top; } catch(e){ return true; } }
@@ -1163,11 +1163,11 @@ Beachside Adult &amp; Family Therapy
   }
   document.getElementById("printBtn").addEventListener("click", function(){
     stampPrintHead();
-    tryPrint(true, "Printing does not work inside the Claude viewer. Everything is now expanded so you can read it all \u2014 to print, use the PDF in your Beachside Jane Pages folder.");
+    tryPrint(true, "Printing is blocked in this view. Everything is now expanded so you can read it all \u2014 to print, open the page in its own browser tab and use your browser\u2019s Print command.");
   });
   document.getElementById("saveBtn").addEventListener("click", function(){
     stampPrintHead();
-    tryPrint(false, "Printing does not work inside the Claude viewer. Everything is now expanded so you can read it all \u2014 to print, use the PDF in your Beachside Jane Pages folder.");
+    tryPrint(false, "Printing is blocked in this view. Everything is now expanded so you can read it all \u2014 to print, open the page in its own browser tab and use your browser\u2019s Print command.");
   });
   document.getElementById("resetBtn").addEventListener("click", function(){
     S.daily = {key:todayKey(), start:{}, three:{}, five:{}};
