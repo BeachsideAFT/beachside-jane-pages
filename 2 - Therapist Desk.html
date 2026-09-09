@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
 <meta charset="utf-8">
-<title>Beachside Therapist Desk — FINAL 8 Sep 2026</title>
+<title>Beachside Therapist Desk — FINAL 9 Sep 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
@@ -348,7 +348,7 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
 
 <main class="wrap">
 <div class="printhead" id="printHead"></div>
-<div class="note" style="border-left:4px solid #8BC34A;margin-bottom:14px"><b>Version: FINAL — 8 September 2026.</b> This is the single current copy. It supersedes every earlier file called "Therapist Desk" or "Beachside Therapist Desk". If the copy you are reading does not carry this line, it is out of date — get the current one from the link Dr. O&#x27;Reilly sent.</div>
+<div class="note" style="border-left:4px solid #8BC34A;margin-bottom:14px"><b>Version: FINAL — 9 September 2026.</b> This is the single current copy. It supersedes every earlier file called "Therapist Desk" or "Beachside Therapist Desk". If the copy you are reading does not carry this line, it is out of date — get the current one from the link Dr. O&#x27;Reilly sent.</div>
 
 <!-- ============ DAILY ============ -->
 <section class="panel" id="p-daily" role="tabpanel" aria-labelledby="tab-daily">
@@ -1188,15 +1188,18 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
   <div class="note warn"><b>There is no Medicaid or Medi-Cal fee, and that is deliberate.</b> Those clients are never charged. If one does not call and does not show, that goes to Dr. O&#x27;Reilly or Lisa — it is the termination route, not a billing one.</div>
 
   <h4>The rule, and which button follows from it</h4>
-  <p>Two routes, and they are not interchangeable. <b>Cancel/Delete</b> is how a <b>therapist</b> records that <i>they</i> cancelled — no charge to the client, just the reason. The <b>No Show</b> button is where the money is, for a client who did not come or cancelled too late. The cancel control sits on the appointment screen <b>below Booking Information</b>.</p>
+  <p>Two routes, and they are not interchangeable. <b>Cancel/Delete</b> is how a <b>therapist</b> records that <i>they</i> cancelled — no charge to the client, just the reason. The <b>No Show</b> button is where the money is, for a client who did not come or cancelled too late. The cancel control is <b>inside</b> the Booking Info section, not above it: open the appointment, scroll past the client block and the date-and-service block, and you reach a row of buttons reading <kbd>Copy</kbd> <kbd>Move</kbd> <kbd>&raquo;</kbd> <kbd>Cancel/Delete</kbd>. It is the last one. It is <i>not</i> beside <kbd>Arrive</kbd> and <kbd>No Show</kbd> at the top of the panel, which is where people look first.</p>
   <ol>
     <li><b>More than 24 hours' notice?</b> The client books a <b>make-up session within two weeks</b>. If they do, nothing is charged.</li>
     <li><b>No make-up booked inside those two weeks?</b> The fee is charged <b>on the original appointment</b> — the one they missed, not the replacement.</li>
     <li><b>Under 24 hours' notice?</b> The cancellation fee is charged.</li>
     <li><b>A no show costs the same as a cancellation.</b> Not coming and not calling is billed the same way.</li>
     <li><b>Medicaid or Medi-Cal? Never charged.</b> We cannot bill them for this. A client who does not call and does not show is taken to have ended treatment — that goes to Dr. O&#x27;Reilly or Lisa, not to a fee button.</li>
-    <li><b>Charging?</b> Match their payer from the single list above. Then the reason screen opens — choose it there, and change the pre-selected first option if it is not what happened.</li>
+    <li><b>Charging?</b> Match their payer from the single list above. Then the <b>Reason for Cancellation</b> screen opens. <b>Provider sick is already selected when it opens</b> — change it, or you will record provider sickness against a client&#x27;s cancellation.</li>
   </ol>
+  <div class="note">
+    <b>The eight reasons, in the order they appear.</b> <kbd>Provider sick</kbd> · <kbd>Provider vacation</kbd> · <kbd>Provider out personal</kbd> · <kbd>1 of 2 free cancellations per year</kbd> · <kbd>2 of 2 free cancellations per year</kbd> · <kbd>Holiday - Clinic Closed</kbd> · <kbd>Treatment terminated/graduated</kbd> · <kbd>Other Reason</kbd>. Choosing <kbd>Other Reason</kbd> opens a box you must type in before <kbd>Save &amp; Cancel Appointment</kbd> will work. Nothing is cancelled until you press Save. Checked on screen 9 September 2026.
+  </div>
   <div class="note">
     <b>Check the insurer before you touch a button.</b> We can never charge more than that client&#x27;s insurer reimburses, including the copay. That is the whole reason there is a separate fee per payer — pick the wrong one and we have overcharged.
   </div>
@@ -1222,7 +1225,7 @@ footer .wrap{display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-si
     <b>Two buttons you may go looking for and not find.</b> There is a <kbd>No Show Other</kbd> for a reason that is not listed, but there is <b>no</b> equivalent on the cancellation side — no "Late Cancelation Other". Both gaps closed on 8 September: <kbd>No Show/Cancelation Other</kbd> and <kbd>No Show/Cancelation - Self Pay</kbd> now cover cancellations as well as no shows.
   </div>
   <div class="note">
-    <b>Never delete instead of cancelling.</b> Deleting records nothing and sends nothing. A no show or a late cancellation is exactly the event you want on the record.
+    <b>Never delete instead of cancelling.</b> The <kbd>Cancel/Delete</kbd> menu tells you which is which, in its own headings: <b>Cancel with Notifications</b> sits above <kbd>Cancel Appointment - No Charge</kbd>, and <b>Without notifications</b> sits above <kbd>Delete Appointment</kbd>. So deleting is the silent one — the appointment disappears and the client is told nothing, which is how someone ends up arriving for a session that is no longer there. A no show or a late cancellation is exactly the event you want on the record. Checked on screen 9 September 2026.
   </div>
 
   </details>
